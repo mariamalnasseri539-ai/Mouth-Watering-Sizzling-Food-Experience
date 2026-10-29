@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>MARIB GRILL & BURGER | مطعم مأرب للمشويات والبرجر الفاخر</title>
+  
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Modern Mouth-Watering Stylesheet -->
+  <link rel="stylesheet" href="css/marib-modern.css">
+</head>
+
+<body>
+
+  <!-- ==================== TOP HUNGER METER & SIZZLE SOUND BAR ==================== -->
+  <div class="hunger-meter-bar">
+    <div class="container hunger-inner">
+      
+      <!-- Hunger Level Selector -->
+      <div class="hunger-meter-title">
+        <i class="fa-solid fa-utensils"></i>
+        <span data-i18n="hunger_title">مقياس الجوع التفاعلي 🤤:</span>
+      </div>
+
+      <div class="hunger-level-buttons">
+        <button class="hunger-btn active" data-hunger="all" data-i18n="hunger_all">عرض الكل</button>
+        <button class="hunger-btn" data-hunger="light" data-i18n="hunger_light">جوعان خفيف 🥪</button>
+        <button class="hunger-btn" data-hunger="medium" data-i18n="hunger_medium">جوعان نص نص 🍔</button>
+        <button class="hunger-btn" data-hunger="monster" data-i18n="hunger_monster">ميت جوع / جوع وحش 🦁🔥</button>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header>
+    <nav id="navbar">
+      <div class="container nav-wrapper">
+        
+        <!-- Brand Logo -->
+        <a href="#home" class="brand-logo">
+          <div class="brand-flame-icon">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">MARIB <span>GRILL</span></span>
+            <span class="brand-subtitle">Charcoal & Gourmet Burger</span>
+          </div>
+        </a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link" data-i18n="nav_home">الرئيسية</a></li>
+          <li><a href="#offers" class="nav-link" data-i18n="nav_offers">عروض اللهيب</a></li>
+          <li><a href="#menu" class="nav-link" data-i18n="nav_menu">قائمتنا المشوية</a></li>
+          <li><a href="#book" class="nav-link book-table-btn" data-i18n="nav_book">حجز طاولة</a></li>
+        </ul>
+
+        <!-- Action Controls -->
+        <div class="nav-actions">
+          <!-- Theme Switcher -->
+          <button id="themeToggleBtn" class="icon-btn" aria-label="Toggle Theme" title="تبديل المظهر">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+
+          <!-- Language Switcher -->
+          <button id="langToggleBtn" class="lang-btn" aria-label="Toggle Language" title="تغيير اللغة">
+            <i class="fa-solid fa-globe"></i>
+            <span id="langBtnText">English</span>
+          </button>
+
+          <!-- Cart Trigger -->
+          <button class="icon-btn cart-trigger-btn" aria-label="View Order Cart" title="سلة الطلبات">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <span class="cart-badge-count" style="display:none;">0</span>
+          </button>
+
+          <!-- Book Table CTA Button -->
+          <button class="btn btn-primary btn-sm book-table-btn" data-i18n="nav_book">
+            <i class="fa-solid fa-calendar-check"></i>
+            حجز طاولة
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== HERO SECTION (MOUTH-WATERING SHOWCASE) ==================== -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="hero-layout">
+
+        <!-- Hero Content Text -->
+        <div class="hero-content">
+          <div>
+            <span class="badge-flame" data-i18n="hero_badge">🔥 لحم بقري أنجوس طازج 100% مشوي على الحطب والجمر</span>
+            <h1 class="hero-title">
+              <span data-i18n="hero_title_p1">مشويات وبرجر</span><br>
+              <span class="glow-flame" data-i18n="hero_title_highlight">مطعم مأرب الفاخر</span>
+            </h1>
+          </div>
+
+          <p class="hero-desc" data-i18n="hero_desc">
+            تذوق متعة البرجر المشوي المتبل على الجمر، غرقان بجبنة الشيدر السايحة، والبيتزا الإيطالية الساخنة التي تسيل من الأطراف. طعام صُمم ليشبع جوعك الحقيقي ويسعد حواسك!
+          </p>
+
+          <div class="hero-cta-group">
+            <button class="btn btn-primary" onclick="openFoodCustomizer('m2')" data-i18n="hero_cta_order">
+              <i class="fa-solid fa-fire"></i>
+              اطلب وجبة اللهيب الآن
+            </button>
+            <a href="#menu" class="btn btn-secondary" data-i18n="hero_cta_menu">
+              <i class="fa-solid fa-utensils"></i>
+              استكشف القائمة الشهية
+            </a>
+          </div>
+
+          <!-- Feature Highlights -->
+          <div class="hero-features-strip">
+            <div class="hero-feat-item">
+              <div class="hero-feat-icon"><i class="fa-solid fa-drumstick-bite"></i></div>
+              <span data-i18n="hero_feat_1">لحم أنجوس طازج يومياً</span>
+            </div>
+            <div class="hero-feat-item">
+              <div class="hero-feat-icon"><i class="fa-solid fa-cheese"></i></div>
+              <span data-i18n="hero_feat_2">جبنة شيدر تسيل سيلان</span>
+            </div>
+            <div class="hero-feat-item">
+              <div class="hero-feat-icon"><i class="fa-solid fa-pizza-slice"></i></div>
+              <span data-i18n="hero_feat_3">عجينة إيطالية مخمرة 48 ساعة</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Food Stage -->
+        <div class="hero-food-stage">
+          <div class="hero-glow-backdrop"></div>
+          
+          <!-- Floating Main Burger Image -->
+          <img src="images/f2.png" alt="Marib Monster Double Burger" class="hero-main-burger">
+
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-top-left">
+            <i class="fa-solid fa-cheese text-cheddar" style="font-size:1.4rem;"></i>
+            <span style="font-weight:800; font-size:0.85rem;" data-i18n="badge_cheddar">🧀 غرقان جبنة شيدر سايحة</span>
+          </div>
+
+          <div class="floating-badge badge-bottom-right">
+            <i class="fa-solid fa-bacon text-flame" style="font-size:1.4rem;"></i>
+            <span style="font-weight:800; font-size:0.85rem;" data-i18n="badge_smoky">🥩 شرائح بيكون مدخنة ومقرمشة</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SPECIAL SIZZLING OFFERS ==================== -->
+  <section id="offers" class="offers-section">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="badge-flame" data-i18n="offers_badge">عروض اللهيب التي لا تقاوم</span>
+        <h2 class="section-title text-cheddar" data-i18n="offers_title">عروض الكومبو الملكية</h2>
+        <p class="section-subtitle" data-i18n="offers_subtitle">وجبات عملاقة بأسعار احتفالية لتشبع أقوى لحظات الجوع</p>
+        <div class="glow-divider"></div>
+      </div>
+
+      <div class="offers-grid">
+        
+        <!-- Offer 1 -->
+        <div class="offer-card">
+          <div class="offer-img-box">
+            <img src="images/o1.jpg" alt="Monster Burger Feast">
+            <span class="offer-discount-tag">-20% OFF 🔥</span>
+          </div>
+          <div class="offer-content">
+            <h3 class="offer-title" data-i18n="offer_1_title">وليمة خميس الوحش (دبل برجر ولودد فرايز)</h3>
+            <p class="offer-desc" data-i18n="offer_1_desc">قطعتين أنجوس مشوية على الفحم، غرقانة جبنة شيدر معتقة، بصل مكرمل، صوص باربيكيو مدخن، وبطاطس لودد بالجبن.</p>
+            <div class="offer-footer">
+              <div class="offer-price-box">
+                <span class="offer-old-price">$25</span>
+                <span class="offer-new-price">$19.99</span>
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="openFoodCustomizer('m2')" data-i18n="btn_claim_offer">
+                <i class="fa-solid fa-cart-plus"></i>
+                اطلب العرض الناري
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Offer 2 -->
+        <div class="offer-card">
+          <div class="offer-img-box">
+            <img src="images/o2.jpg" alt="Volcano Pizza Days">
+            <span class="offer-discount-tag">-15% OFF 🧀</span>
+          </div>
+          <div class="offer-content">
+            <h3 class="offer-title" data-i18n="offer_2_title">أيام البيتزا البركانية محشية الأطراف</h3>
+            <p class="offer-desc" data-i18n="offer_2_desc">بيتزا حطب إيطالية بأطراف محشوة جبنة موزاريلا غنية مع بيبيروني حار وفطر وصلصة طماطم سان مارزانو.</p>
+            <div class="offer-footer">
+              <div class="offer-price-box">
+                <span class="offer-old-price">$22</span>
+                <span class="offer-new-price">$17.99</span>
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="openFoodCustomizer('m1')" data-i18n="btn_claim_offer">
+                <i class="fa-solid fa-cart-plus"></i>
+                اطلب العرض الناري
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GOURMET FOOD MENU SECTION ==================== -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="badge-flame" data-i18n="menu_badge">أطباق تفتح الشهية</span>
+        <h2 class="section-title text-cheddar" data-i18n="menu_title">منيو مشويات وبرجر مأرب</h2>
+        <p class="section-subtitle" data-i18n="menu_subtitle">تُحضر كل وجبة فور طلبك لتصلك وهي تدخن وساخنة ومقرمشة بألذ نكهة</p>
+        <div class="glow-divider"></div>
+      </div>
+
+      <!-- Controls: Search & Category Tabs -->
+      <div class="menu-controls">
+        <div class="menu-search-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="menuSearchInput" class="menu-search-input" placeholder="ابحث في البرجر المشوي، البيتزا، اللودد فرايز..." data-i18n-placeholder="menu_search_placeholder">
+        </div>
+
+        <div class="menu-filter-tabs">
+          <button class="menu-tab-btn active" data-category="all" data-i18n="menu_tab_all">جميع الأصناف</button>
+          <button class="menu-tab-btn" data-category="burger" data-i18n="menu_tab_burger">برجر مشوي 🍔</button>
+          <button class="menu-tab-btn" data-category="pizza" data-i18n="menu_tab_pizza">بيتزا حطب 🍕</button>
+          <button class="menu-tab-btn" data-category="pasta" data-i18n="menu_tab_pasta">باستا إيطالية 🍝</button>
+          <button class="menu-tab-btn" data-category="fries" data-i18n="menu_tab_fries">مقبلات وبطاطس 🍟</button>
+        </div>
+      </div>
+
+      <!-- Food Cards Grid -->
+      <div class="food-grid" id="foodGrid">
+        <!-- Rendered dynamically via js/marib-app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- 1. Food Customizer & Toppings Modal -->
+  <div class="modal-overlay" id="customizerModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="customizerMealTitle">تخصيص الوجبة</h3>
+        <button class="modal-close-btn" id="customizerCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        
+        <div style="display:flex; align-items:center; gap:20px; margin-bottom:20px; background:var(--bg-card); padding:16px; border-radius:var(--radius-md); border:1px solid var(--border-subtle);">
+          <img id="customizerMealImg" src="" alt="Meal" style="width:90px; height:90px; object-fit:contain;">
+          <div>
+            <span style="font-size:0.85rem; color:var(--text-muted);">السعر الأساسي:</span>
+            <div id="customizerBasePrice" style="font-size:1.6rem; font-weight:900; color:var(--color-cheddar);">$0</div>
+          </div>
+        </div>
+
+        <form id="customizerForm">
+          <div class="toppings-group">
+            <label data-i18n="modal_cust_toppings">أضف لمساتك اللذيذة (إضافات الجائعين):</label>
+            
+            <div class="toppings-checkboxes">
+              <label class="topping-chip">
+                <input type="checkbox" name="topping" value="1.50" data-name="Extra Cheddar 🧀">
+                <span>جبنة شيدر إضافية 🧀 (+$1.50)</span>
+              </label>
+
+              <label class="topping-chip">
+                <input type="checkbox" name="topping" value="2.00" data-name="Crispy Bacon 🥓">
+                <span>بيكون بقري مقرمش 🥓 (+$2.00)</span>
+              </label>
+
+              <label class="topping-chip">
+                <input type="checkbox" name="topping" value="1.00" data-name="Jalapeño 🌶️">
+                <span>هالبينو حار 🌶️ (+$1.00)</span>
+              </label>
+
+              <label class="topping-chip">
+                <input type="checkbox" name="topping" value="1.00" data-name="BBQ Truffle Sauce 🍯">
+                <span>صوص باربيكيو مدخن 🍯 (+$1.00)</span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%; margin-top:24px;" data-i18n="modal_cust_add">
+            <i class="fa-solid fa-cart-plus"></i>
+            إضافة الوجبة المخصصة للسلة
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Table Reservation Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 data-i18n="modal_book_title">حجز طاولة في صالة مأرب</h3>
+        <button class="modal-close-btn" id="bookingCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:20px;" data-i18n="modal_book_desc">
+          تجنب الانتظار! احجز طاولتك أو قسم العائلات وجلسات الـ VIP مسبقاً لقضاء أمتع الأوقات.
+        </p>
+        <form id="bookingForm">
+          <div class="form-group">
+            <label data-i18n="modal_book_name">الاسم الكريم</label>
+            <input type="text" class="form-control" required placeholder="اسمك الكريم">
+          </div>
+          <div class="form-group">
+            <label data-i18n="modal_book_phone">رقم الجوال / واتساب</label>
+            <input type="tel" class="form-control" required placeholder="+967 7xxxxxxxx">
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+            <div class="form-group">
+              <label data-i18n="modal_book_date">التاريخ</label>
+              <input type="date" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label data-i18n="modal_book_time">الوقت</label>
+              <input type="time" class="form-control" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label data-i18n="modal_book_guests">عدد الأشخاص</label>
+            <select class="form-control" required>
+              <option value="2">شخصين (طاولة ثنائية)</option>
+              <option value="4">4 - 6 أشخاص (جلسة عائلية)</option>
+              <option value="8">8 أشخاص فأكثر (قسم VIP مأرب)</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="modal_book_submit">
+            <i class="fa-solid fa-check"></i>
+            تأكيد حجز الطاولة
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Shopping Cart & WhatsApp Order Modal -->
+  <div class="modal-overlay" id="cartModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 data-i18n="cart_title">سلة وجباتك الساخنة</h3>
+        <button class="modal-close-btn" id="cartCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="cartItemsList">
+          <!-- Populated by JS -->
+        </div>
+        <div class="cart-footer">
+          <div class="cart-total-bar">
+            <span data-i18n="cart_total">المجموع الكلي:</span>
+            <span id="cartTotalPrice" class="text-cheddar">$0.00</span>
+          </div>
+          <div style="display:flex; gap:12px;">
+            <button id="clearCartBtn" class="btn btn-secondary" style="flex:1;" data-i18n="cart_clear">
+              <i class="fa-solid fa-trash-can"></i>
+              إفراغ السلة
+            </button>
+            <button id="whatsappOrderBtn" class="btn btn-primary" style="flex:2;" data-i18n="cart_whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+              إرسال الطلب عبر واتساب
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer-section">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div>
+          <a href="#home" class="brand-logo" style="margin-bottom:14px;">
+            <div class="brand-flame-icon">
+              <i class="fa-solid fa-fire"></i>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title">MARIB <span>GRILL</span></span>
+              <span class="brand-subtitle">Charcoal & Gourmet Burger</span>
+            </div>
+          </a>
+          <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.7;" data-i18n="footer_tagline">
+            مطعم مأرب للمشويات والبرجر والبيتزا الفاخرة في صنعاء واليمن.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="font-size:1.15rem; font-weight:800; margin-bottom:16px; color:var(--color-cheddar);">روابط سريعة</h4>
+          <ul style="display:flex; flex-direction:column; gap:10px; font-size:0.92rem; color:var(--text-muted);">
+            <li><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
+            <li><a href="#offers" data-i18n="nav_offers">عروض اللهيب</a></li>
+            <li><a href="#menu" data-i18n="nav_menu">القائمة</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size:1.15rem; font-weight:800; margin-bottom:16px; color:var(--color-cheddar);">الفروع والتواصل</h4>
+          <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:8px;">
+            <i class="fa-solid fa-location-dot text-flame"></i> صنعاء - شارع الستين / حدة، اليمن
+          </p>
+          <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:8px;">
+            <i class="fa-solid fa-phone text-flame"></i> +967 736 637 418
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          <span>&copy; 2025 - 2026 MARIB GRILL. <span data-i18n="footer_rights">جميع الحقوق محفوظة.</span></span>
+          <div style="margin-top:4px;" data-i18n="footer_credits">
+            تم التصميم والتطوير بأعلى معايير الويب • مشروع بورتفوليو فرونت إند احترافي
+          </div>
+        </div>
+        <div>
+          <span class="footer-cv-pill">
+            <i class="fa-solid fa-fire"></i> Sizzling Gourmet Frontend Experience
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="js/marib-app.js"></script>
+</body>
+</html>
